@@ -12,6 +12,9 @@
 'use strict';
 
 /*** Event Listeners ***/
+document.getElementById("thing").addEventListener("click", startgame)
+
+
 
 
 
@@ -27,6 +30,9 @@ function round(value, decimals) {
 function randInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
 
 function age(){
     let x = Number(prompt("How old are you"))
@@ -74,9 +80,11 @@ function basement(){
     let choice_1 = prompt("You see a ghost in the distance, do you (1)run up to it or (2)run back upstairs?")
     if (choice_1 == 1){
         alert("it was mr flynn and he shot you with a watergun..")
+        alert("game over...")
     }
     if (choice_1 == 2){
         alert("Mr flynn started chasing you up the stairs and shot you with a watergun and you slipped and fell")
+        alert("game over..")
     }
 }
 
@@ -84,15 +92,17 @@ function upstairs(){
     let choice_1 = prompt("Mr brash greets you, do you say (1)Hi or (2)walk right past him?")
     if (choice_1 == 1){
         alert("Mr brash said Hi back")
+        walk_past()
+        return
     }
     if (choice_1 == 2){
         alert("Mr brash turns into a ghost and haunts you forever")
-        let brash = prompt("you run away and have a choice to go in mr flynn's class or mr ruddys. do you cleanse yourself with (1)mr flynn's water gun or take a shower in (2)mr ruddy's shower cleaner thing?")
-        if (brash == 1){
+        let brash_1 = prompt("you run away and have a choice to go in mr flynn's class or mr ruddys. do you cleanse yourself with (1)mr flynn's water gun or take a shower in (2)mr ruddy's shower cleaner thing?")
+        if (brash_1 == 1){
             brash()
             return
         }
-        if (brash == 2){
+        if (brash_1 == 2){
             ruddy()
             return
         }
@@ -100,7 +110,7 @@ function upstairs(){
 }
 
 function brash(){
-    let choice = prompt("you cleanse yourself with mr flynns special water gun... then you begin to see mr flynn walk into the class... do you (1)hide or (2)fight him?")
+    let choice = prompt("you cleanse yourself with mr flynns special water gun... then you begin to see mr flynn walk into the class... do you (1)fight him or (2)hide")
     if (choice == 1){
         alert("mr flynn destroys you..")
         alert("end of game!!")
@@ -123,3 +133,22 @@ function ruddy(){
         return
     }
 }
+
+function walk_past(){ 
+    let choice = prompt("You walk by Mr brash after greeting him and notice he begins to follow you, do you (1) run fast, or (2) ask him what he's doing?")
+    if (choice == 1){
+        alert("He walks into mr flynns classroom and you hit a wall and get knocked out..")
+        alert("game over..")
+    }
+    if (choice == 2){
+        alert("He says hes just going to mr flynns class and you feel awkward and pass out...")
+        alert("game over..")
+    }
+}
+
+
+
+
+
+
+
