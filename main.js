@@ -17,7 +17,6 @@ document.getElementById("thing").addEventListener("click", startgame)
 
 
 
-
 /*** Functions ***/
 
 // A very accurate rounding function
