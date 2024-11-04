@@ -209,5 +209,12 @@ function greeting(){
 }
 
 function two_digit(){
-    let x = Math.floor(Math.random()*10)
-
+    let x = Number(Math.random()*20)
+    if (x == 0){
+        console.log(x)
+          
+    }
+    if ((x == 12) || (x == 14) || (x == 16) || (x == 18) || (x == 20)){
+        alert("even")
+    }
+}
