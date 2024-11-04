@@ -146,8 +146,67 @@ function walk_past(){
 }
 
 
+let message = `Hi! Please make a selection:
+1 - Play
+2 - Options
+3 - DLC
+4 - Check for Updates
+5 - Exit
+`
 
 
+function menu(){
+    let x = prompt(message)
+    if (x == 1){
+        let y = prompt("what difficulty would you like? (1)Easy (2)Medium or (3)Hard?")
+        if (y == 1){
+            alert("you selected the easy route..")
+            return
+        }
+        else if (y == 2){
+            alert("you selected what most people select.")
+            return
+        }
+        else if (y == 3){
+            alert("you're brave")
+            return
+        }
 
+    }
+    else if (x == 2){
+        alert("you selected options")
+        return
+    }
+    else if (x == 3){
+        alert("no new dlc at this time dude")
+        return
+    }
+    else if (x == 4){
+        alert("everything is up to date")
+        return
+    }
+    else if (x == 5){
+        alert("bye")
+    }
+    return
+}
 
+function greeting(){
+    let hour = Number(prompt("what time in hours is it for you in military standard right now?"))
+    if (hour <= 11){
+        alert("Good morning!")
+        return
+    }
+    else if ((hour >= 12) || (hour <= 17)){
+        alert("good afternoon")
+        return
+    }
+    else if ((hour >= 18) || (hour <= 23)){
+        alert("goo evening")
+        return
+    }
+}
+
+function two_digit(){
+    let x = Math.floor(Math.random()*10)
 
