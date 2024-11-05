@@ -29,3 +29,10 @@ h3 {
 #sans {
     right : 30px;
 }
+
+#thing1 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+

@@ -218,3 +218,122 @@ function two_digit(){
         alert("even")
     }
 }
+
+document.getElementById("sans").addEventListener("click", which_day)
+
+function which_day(){
+    let n = Number(prompt("What day is it?"))
+    if (n == 1){
+        alert("It is Monday")
+    }
+    else if(n == 2){
+        alert("It is Tuesday")
+    }
+    else if (n == 3){
+        alert("It is Wednesday")
+    }
+    else if (n == 4){
+        alert("It is Thursday")
+    }
+    else if (n == 5){
+        alert("It is Friday")
+    }
+    else if (n == 6){
+        alert("It is Saturday")
+    }
+    else if (n == 7){
+        alert("It is Sunday!")
+    }
+    else {
+        alert("That's not a day...")
+    }
+}
+
+document.getElementById("random").addEventListener("click", random_number)
+
+function random_number(){
+    let x = Number(Math.round((Math.random()) * 10))
+    let y = Number(prompt("what number shall you choose?"))
+    if (x == y){
+        alert("you guessed the number!")
+    }
+    else if (x > y){
+        let z = x - y
+        alert(`you were off by ${z}...`)
+        alert(`the number was actually ${x}`)
+    }
+    else if (x < y){
+        let z = y - x
+        alert(`you were off by ${z}...`)
+        alert(`the number was actually ${x}`)
+    }
+    else if (y > 10){
+        alert("you were out of the range of 10... not even close👍")
+    }
+    else {
+        alert("dude what are you typing.. error error error 👍👍👍👍")
+    }
+}
+
+document.body.addEventListener("keydown", () => {
+    console.log("you pressed down")
+})
+
+let d = document.getElementById("thing1")
+d.style.right = 0
+d.style.top = 0
+
+
+function moveup() {
+    let d = document.getElementById('thing1');
+    d.style.position = "relative";
+    d.style.top = parseInt(d.style.top) - 5 + 'px';
+}
+
+function moveleft(){
+    let d = document.getElementById("thing1")
+    d.style.position = "relative";
+    d.style.right = parseInt(d.style.right) + 5 + 'px';
+}
+
+function moveright(){
+    let d = document.getElementById("thing1")
+    d.style.position = "relative";
+    d.style.right = parseInt(d.style.right) - 5 + 'px';
+}
+
+function movedown(){
+    let d = document.getElementById("thing1")
+    d.style.position = "relative";
+    d.style.top = parseInt(d.style.top) + 5 + 'px';
+}
+
+
+
+document.body.addEventListener("keydown", move)
+
+function move(event){
+    let x = event.key; 
+    if (x == "w"){
+        moveup()
+        console.log("up")
+    }
+    if (x == "d"){
+        moveright()
+        console.log("right")
+    }
+    if (x == "a"){
+        moveleft()
+        console.log("left")
+    }
+    if (x == "s"){
+        movedown()
+        console.log("down")
+    }
+}
+
+
+
+
+
+
