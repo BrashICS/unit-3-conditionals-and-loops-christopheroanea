@@ -280,8 +280,8 @@ document.body.addEventListener("keydown", () => {
 })
 
 let d = document.getElementById("thing1")
-d.style.right = 0
-d.style.top = 0
+d.style.right = -700 + "px"
+d.style.top = -300 + "px"
 
 
 function moveup() {
@@ -307,7 +307,6 @@ function movedown(){
     d.style.position = "relative";
     d.style.top = parseInt(d.style.top) + 10 + 'px';
 }
-
 
 
 document.body.addEventListener("keydown", move)

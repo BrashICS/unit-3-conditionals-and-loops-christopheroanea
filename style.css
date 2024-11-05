@@ -28,6 +28,7 @@ h3 {
 
 #sans {
     right : 30px;
+    margin : 30px;
 }
 
 #thing1 {
@@ -36,3 +37,13 @@ h3 {
     position: relative;
 }
 
+#landon {   
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    width: 120px;
+    margin: 30px;
+    position: relative;
+    top: -200px;
+    left: 700px;
+}
