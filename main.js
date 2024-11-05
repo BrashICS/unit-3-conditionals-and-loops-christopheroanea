@@ -287,25 +287,25 @@ d.style.top = 0
 function moveup() {
     let d = document.getElementById('thing1');
     d.style.position = "relative";
-    d.style.top = parseInt(d.style.top) - 5 + 'px';
+    d.style.top = parseInt(d.style.top) - 10 + 'px';
 }
 
 function moveleft(){
     let d = document.getElementById("thing1")
     d.style.position = "relative";
-    d.style.right = parseInt(d.style.right) + 5 + 'px';
+    d.style.right = parseInt(d.style.right) + 10 + 'px';
 }
 
 function moveright(){
     let d = document.getElementById("thing1")
     d.style.position = "relative";
-    d.style.right = parseInt(d.style.right) - 5 + 'px';
+    d.style.right = parseInt(d.style.right) - 10 + 'px';
 }
 
 function movedown(){
     let d = document.getElementById("thing1")
     d.style.position = "relative";
-    d.style.top = parseInt(d.style.top) + 5 + 'px';
+    d.style.top = parseInt(d.style.top) + 10 + 'px';
 }
 
 
