@@ -331,6 +331,21 @@ function move(event){
     }
 }
 
+document.getElementById("sword_of_landon").addEventListener("mouseover", whatfunction)
+document.getElementById("sword_of_landon").addEventListener("mouseleave", newfunction)
+
+
+function whatfunction(){
+    document.getElementById("textthing").textContent = `This sword gives you special powers.
+    also farting in your face..
+    and on greg`
+}
+
+function newfunction(){
+    console.log("landon")
+    document.getElementById("textthing").textContent = ""
+}
+
 
 
 
