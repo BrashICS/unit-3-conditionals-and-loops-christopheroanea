@@ -346,7 +346,18 @@ function newfunction(){
     document.getElementById("textthing").textContent = ""
 }
 
-
+function count_down(start, stop){
+    if (start < stop){
+        console.log("start must be greater than stop")
+    }
+        let count = 1
+    while (start > stop){
+        start = start - 1
+        count += 1
+        console.log(start)
+       }
+       console.log(count)
+}
 
 
 
