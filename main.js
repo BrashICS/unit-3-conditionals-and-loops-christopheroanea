@@ -359,6 +359,12 @@ function count_down(start, stop){
        console.log(count)
 }
 
+function print(n){
+    let x = print_reverse(n)
+    console.log("n")
+}
+
+
 
 
 
