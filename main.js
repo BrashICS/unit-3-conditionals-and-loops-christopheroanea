@@ -359,10 +359,15 @@ function count_down(start, stop){
        console.log(count)
 }
 
-function print(n){
-    let x = print_reverse(n)
-    console.log("n")
+function reverse(str){
+    let z = str.length
+    while (z >= 0){
+        console.log(str[z])
+        z--
+    }
 }
+
+
 
 
 
