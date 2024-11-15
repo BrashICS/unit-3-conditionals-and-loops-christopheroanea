@@ -367,6 +367,41 @@ function reverse(str){
     }
 }
 
+function negative_value(){
+    let value;
+    do {
+        value = +prompt("Enter a negative value and enter a non negative value to stop")
+    } while (value < 0)
+        if (value > 0){
+            alert("you quit")
+        }
+        return value;
+    }
+
+function parrot(){
+    let input;
+    let x = "quit"
+    do {
+        input = prompt("enter some text or enter quit to stop")
+    }
+    while (input.toLowerCase() != x)
+
+    alert("you quit")
+    return input;
+}   
+
+function factorial(n){
+    let count = n;
+    let x; 
+    while (n > 0){
+        x = n * (count - 1)
+        console.log(x)
+    }
+
+    
+}
+
+
 
 
 
