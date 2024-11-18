@@ -397,8 +397,6 @@ function factorial(n){
         x = n * (count - 1)
         console.log(x)
     }
-
-    
 }
 
 
