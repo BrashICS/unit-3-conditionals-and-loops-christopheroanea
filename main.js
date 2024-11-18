@@ -434,10 +434,22 @@ function count4(begin, end){
     let answer = 0
     for (begin, end; begin >= end; begin--){
         answer = begin / 4
-        if (answer % 2 == 0){
-            console.log(answer) 
+        if (answer % 1 == 0){
+            console.log(`${answer * 4} is divisible by 4`)
         }
     }
+}
 
+function sum_divisible(n, x){
+    let answer = 0
+    let answeranswer = 0
+    let thing = n
+    for (n, x; n >= 0 && thing < n ; n--){
+        answer = n / x
+        if (answer % 1 == 0){
+            answeranswer += answer
+        }
+    }
+    console.log(answeranswer)
 }
 
