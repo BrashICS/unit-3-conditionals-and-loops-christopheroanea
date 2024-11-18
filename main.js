@@ -399,10 +399,45 @@ function factorial(n){
     }
 }
 
+function landlandon(n){
+    let count = n;
+    while (count > 0){
+        n = n - 1;
+        count--
+        return n
+    }
+    return count
+}
 
+function sum(n){
+    let answer = 0
+    for (let count = n; count > 0; count--){
+        answer += (count)
+        console.log(answer)   
+    }
+    return answer
+}
 
+function count_uplandon(start, stop){
+    for (start, stop; stop >= start; start++){
+        console.log(start)
+    }
+}
 
+function count_downlandon(start, stop){
+    for (start, stop; stop <= start; start--){
+        console.log(start)
+    }
+}
 
+function count4(begin, end){
+    let answer = 0
+    for (begin, end; begin >= end; begin--){
+        answer = begin / 4
+        if (answer % 2 == 0){
+            console.log(answer) 
+        }
+    }
 
-
+}
 
