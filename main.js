@@ -494,3 +494,19 @@ function button_landon(){
                                         }
 
 }
+
+function percentage(){  
+    let answer = 0
+    for  (let x = 0; x <= 100; x+=2.5){
+        answer = x
+        console.log(answer)
+    }
+}
+
+function alphabet(){
+    let jit = ""
+    for (let letter = 65; letter < 91; letter++){
+        jit += String.fromCharCode(letter);
+    }
+    console.log(jit)
+}
