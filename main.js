@@ -452,7 +452,7 @@ function sum_divisible(n, x){
 document.getElementById("landonbutton").addEventListener("click", thingthree)
 
 function thingthree(){
-    document.getElementById("landon3").src = Greg_cat_explode.gif
+    document.getElementById("landon3").src = "Greg_cat_explode.gif"
 }
 
 document.getElementById("buttonlandon").addEventListener("click", button_landon )
