@@ -442,14 +442,55 @@ function count4(begin, end){
 
 function sum_divisible(n, x){
     let answer = 0
-    let answeranswer = 0
-    let thing = n
-    for (n, x; n >= 0 && thing < n ; n--){
-        answer = n / x
-        if (answer % 1 == 0){
-            answeranswer += answer
-        }
+    let y = 0
+    for (n, x; answer < n; answer+= x){
+        y += answer
     }
-    console.log(answeranswer)
+    console.log(y)
 }
 
+document.getElementById("landonbutton").addEventListener("click", thingthree)
+
+function thingthree(){
+    document.getElementById("landon3").elem
+}
+
+document.getElementById("buttonlandon").addEventListener("click", button_landon )
+
+function button_landon(){
+    let x = randInt(1, 11)
+    if (x == 1){
+    document.getElementById("landon2").textContent = "./images/Greg_cat_explode.gif"   
+    }
+    else if (x == 2){
+        document.getElementById("landon2").textContent = "landolandowan"   
+        }
+        else if (x == 3){
+            document.getElementById("landon2").textContent = "jdwagduaguwgdagdw"   
+            }
+            else if (x == 4){
+                document.getElementById("landon2").textContent = "bassel al arif"   
+                }
+                else if (x == 5){
+                    document.getElementById("landon2").textContent = "gregory murphy"   
+                    }
+                    else if (x == 6){
+                        document.getElementById("landon2").textContent = "caleb jackson huges osborne"   
+                        }
+                        else if (x == 7){
+                            document.getElementById("landon2").textContent = "mark shahata mourisse maged elias"   
+                            }
+                            else if (x == 8){
+                                document.getElementById("landon2").textContent = "pls wokr"   
+                                }
+                                else if (x == 9){
+                                    document.getElementById("landon2").textContent = "workworokwoorkwo"   
+                                    }
+                                    else if (x == 10){
+                                        document.getElementById("landon2").textContent = "ohmygof"   
+                                        }
+                                        else {
+                                            "you suck oh my"
+                                        }
+
+}
