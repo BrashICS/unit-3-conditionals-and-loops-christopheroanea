@@ -174,6 +174,7 @@ function menu(){
         }
 
     }
+
     else if (x == 2){
         alert("you selected options")
         return
@@ -509,4 +510,21 @@ function alphabet(){
         jit += String.fromCharCode(letter);
     }
     console.log(jit)
+}
+
+function squirrel_encryption(n){
+    let letter = ""
+    if (n == "n"){
+        letter += "m"
+    }
+        else if (n == "m"){
+            if (n == toLowerCase(n)){
+            letter += "N"
+    }
+        else if (n != toLowerCase(n)){
+        letter += "n"
+    }
+}
+    
+    console.log(letter)
 }
