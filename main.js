@@ -528,3 +528,8 @@ function squirrel_encryption(n){
     
     console.log(letter)
 }
+
+function thingthing(){
+
+    
+}
