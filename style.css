@@ -1,5 +1,5 @@
 /*
-  style.css
+  style.css 
   Feel free to change this CSS for your own purposes
 */
 
@@ -25,3 +25,55 @@ h3 {
     text-decoration: underline;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#sans {
+    right : 30px;
+    margin : 30px;
+}
+
+#thing1 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+#landon {   
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    width: 120px;
+    margin: 30px;
+    position: relative;
+    top: -200px;
+    left: 700px;
+}
+
+#sword_of_landon {
+    border: 5px;
+    border-color: teal;
+    border-style: solid;
+    width: 80px;
+    margin: 30px;
+    position: relative;
+    background-color: black;
+}
+
+#textthing {
+    top: -110px;
+    left: 880px;
+    position: relative;
+    border: 5px;
+    border-style: solid;
+    border-color: purple;
+    width: 150px;
+    font-size: 20px;
+    color: teal;
+    background-color: black;
+}
+
+#textother {
+    top: -160px;
+    left: 700px;
+    position: relative;
+}
+
